@@ -7,13 +7,15 @@
     tools:context="com.example.profileui1.MainActivity">
 
     <RelativeLayout
+        android:id="@+id/rellay11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="20dp"
         android:background="@drawable/gradient">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
             android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
@@ -36,17 +38,250 @@
 
 
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Xuân Trường"
-            android:fontFamily="sans-serif-light"
-            android:textSize="28sp"
-            android:textColor="#fff"
             android:layout_below="@+id/imgUser"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Xuân Trường"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Viet nam"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellay11"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/followersBg"
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="456K"
+                    android:textColor="#fff"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Followers"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/followingBg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="878"
+                    android:textColor="#fff"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/follow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xuantruong@gmail.com"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: "
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0373210237"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram: "
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xt0307"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook: "
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xt0307gmail.com"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
 
 </RelativeLayout>
